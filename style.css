@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+   
+}
+body{
+    background-color:rgb(175, 250, 224);
+    z-index: -1;
+}
+#upperBody{
+    height: 35vh;
+    background-color: rgb(48, 206, 48);
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    box-shadow: 50px 20px 3px aquamarine
+}
+#Name{
+    text-align: center;
+    font-size: 3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    padding-top:10%;
+}
+.mainBody{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+   
+}
+#login,#signIn{
+    height: 60%;
+    width: 50%;
+    background-color: rgb(86, 231, 86);
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.namePassBox{
+    width: 50%;
+    height:50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.nameBox,.passBox,.nameBox2,.passBox2{
+width: 100%;
+height:40%;
+background-color: aquamarine;
+border-radius: 5px;
+margin: 5px;
+border-bottom-right-radius: 15px;
+text-align: center;
+font-size: medium;
+font-family: Arial, Helvetica, sans-serif;
+font-weight: 500;
+cursor: pointer;
+}
+.nameBox::placeholder,.passBox::placeholder,.nameBox2::placeholder,.passBox2::placeholder{
+    color:black;
+}
+.nameBox:active,.passBox:active,.nameBox2:active,.passBox2:active{
+    border: 3.5px solid rgb(0, 88, 0);
+}
+#loginMsg,#signInMsg{
+    font-size: 1.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900; 
+    text-transform: capitalize;
+    color: rgb(58, 116, 0);
+}
+#moreOptions{
+    width: 90%;
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400; 
+    display: flex;
+    justify-content: space-between;
+}
+#signin{
+    width: auto;
+    height: auto;
+    display: flex;
+ align-items: center;
+    flex-direction: column;
+}
+#signInBox{
+
+    width:fit-content;
+    color: aliceblue;
+    padding: 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.nextPageBtn,.nextPage{
+    height:30px;
+    width: 30px;
+    border-radius: 100%;
+   background-color: rgb(128, 255, 0);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   cursor: pointer;
+}
+#signInBox:hover,.nextPageBtn:active,.nextPage:active{
+    background-color: rgb(97, 192, 2);
+}
+.nameBox:focus::placeholder,.passBox:focus::placeholder,.nameBox2:focus::placeholder,.passBox2:focus::placeholder{
+    color: transparent;
+}
+#signIn{
+display: none;
+   }
+#endscreen{
+    height: auto;
+    text-align: center;
+   }
